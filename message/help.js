@@ -4,7 +4,7 @@ const fs = require("fs");
 moment.tz.setDefault("Asia/Jakarta").locale("id");
 
 let dt = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('a')
-const ucapanWaktu = "Selamat "+dt.charAt(0).toUpperCase() + dt.slice(1)
+const ucapanWaktu = "Congratulations "+dt.charAt(0).toUpperCase() + dt.slice(1)
 let setting = JSON.parse(fs.readFileSync('./config.json'))
 const { getLimit, getBalance, cekGLimit } = require("../lib/limit")
 
@@ -25,7 +25,7 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
 _*${ucapanWaktu} ${pushname !== undefined ? pushname : 'Kak'} 👋*_
 
  *INFO BOT*
- Library : *Baileys-MD*
+ Library : *ʜᴇʟʟ ʙᴏʏ ʙᴏᴛ*
  Tanggal Server : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
  *WIB* : ${moment(Date.now()).tz('Asia/Jakarta').locale('id').format('HH:mm:ss z')}
  *WITA* : ${moment(Date.now()).tz('Asia/Makassar').locale('id').format('HH:mm:ss z')}
